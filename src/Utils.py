@@ -32,5 +32,4 @@ def rbf_kernel(x1: HyperParameters, x2: HyperParameters, length_scale=1.0, sigma
 # Treating variables as hyperparameters as an initial example
 def rosenbrock(x: HyperParameters) -> float:
     x1, x2 = x.get_parameters(), x.get_parameters()[1]
-    # return ((1 - x1) ** 2 + 100 * (x2-x1 ** 2) ** 2)[0]
-    return (x1 ** 2 + x2 ** 2)[0]
+    return ((1 - x1) ** 2 + 100 * (x2-x1 ** 2) ** 2)[0]
