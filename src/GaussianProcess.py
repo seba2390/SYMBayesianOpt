@@ -4,7 +4,7 @@ import numpy as np
 
 from src.Hyperparameters import HyperParameters
 from src.Covariance import CovarianceMatrix
-
+from src.Utils import inverse
 
 class GaussianProcess:
     def __init__(self, kernel: Callable, optimization_function: Callable):
